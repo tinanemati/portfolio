@@ -1,4 +1,4 @@
-# Responsive Portfolio
+# Nemati's Portfolio
 ## Template inspired by Bedimcode - 2020
 
 - Responsive Personal Complete Portfolio Using HTML CSS & JavaScript
