@@ -11,12 +11,12 @@
   --font-bold: 700;
 
   /*===== Colors =====*/
-  --first_color: #2ccccc;
-  --first_color-dark: #1f8e8e;
-  --first_color-darken: #104646;
+  --first_color: #2598a4;
+  --first_color-dark: #25a4a2; 
+  --first_color-darken: #248c9c;
   --text_color: #8d8e8e;
-  --first_color-light: #90c3c3;
-  --first_color-lighten: #cdd8d8;
+  --first_color-light: #b2e6eb;
+  --first_color-lighten: #effafd;
 
   /*===== Font and typography =====*/
   --body-font: 'Poppins', sans-serif;
