@@ -501,7 +501,6 @@ img{
   font-size: var(--normal-font-size);
   margin-bottom: var(--mb-2);
   border-radius: .5rem;
-
 }
 
 .contact ::placeholder{
