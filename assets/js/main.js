@@ -14,7 +14,7 @@ closeMenu.addEventListener('click', ()=>{
 })
 
 /*===== ACTIVE AND REMOVE MENU =====*/
-const navLink = document.querySelectorAll('nav__link')
+const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
     navMenu.classList.remove('show')
@@ -34,11 +34,12 @@ function scrollActive() {
       const sectionHeight = current.offsetHeight
       const sectionTop = current.offsetTop - 50
       sectionId = current.getAttribute('id')
-
-      if (scrollY > sectionTop && scrollY < sectionTop + sectionHeight) {
-        document.querySelectorAll('.nav__menu a[href*='+ sectionId + ']').classList.add('active')
+      
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        document.querySelector('.nav__menu a[href*='+ sectionId  + ']').classList.add('active')
       } else {
-        document.querySelectorAll('.nav__menu a[href*='+ sectionId + ']').classList.remove('active')
+        document.querySelector('.nav__menu a[href*='+ sectionId  + ']').classList.remove('active')
       }
+      
     })
 }
