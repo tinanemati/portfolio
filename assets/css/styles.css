@@ -213,29 +213,23 @@ img{
   text-align: center;
 }
 
-.home__img{
-  padding-top: 1.3rem;
-  padding-left: .8rem;
-  width: 160px;
-  height: 160px;
-  background-color: var(--first_color);
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: var(--mb-2);
-}
-
-.home__img img{
-  width: 155px;
-}
-
 .home__title{
   font-size: var(--h1-font-size);
   color: var(--first_color);
   font-weight: var(--font-semi-bold);
 }
 
+.home__blob{
+  width: 200px;
+  fill: var(--first_color);
+}
+
+.home__blob-img{
+  width: 170px;
+}
+
 .home__profession{
-  font-size: var(--small-font-size);
+  font-size: var(--font-medium);
   color: var(--first_color-dark);
   margin-bottom: var(--mb-5);
 }
