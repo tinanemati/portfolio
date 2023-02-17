@@ -5,4 +5,7 @@
 - Smooth scrolling in each section.
 - Compatible with all mobile devices and desktop, with a beautiful and pleasant user interface.
 
-![preview img](/preview.png)
+### Desktop Preview
+![desktop preview img](/preview.png)
+### Mobile Preview
+![mobile img](/mobile.png)
