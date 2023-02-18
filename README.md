@@ -6,6 +6,6 @@
 - Compatible with all mobile devices and desktop, with a beautiful and pleasant user interface.
 
 ### Desktop Preview
-![desktop preview img](/preview.png)
+![desktop preview img](/desktop.png)
 ### Mobile Preview
 ![mobile img](/mobile.png)
