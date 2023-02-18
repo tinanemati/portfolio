@@ -421,45 +421,56 @@ img{
   width: 90%;
 }
 
-/* ===== EDUCATION =====*/
-
-/* ===== EDUCATION =====*/
-
-.education__container{
+/* ===== QUALIFICATION =====*/
+.qualification__container{
   row-gap: 2rem;
 }
 
-.education__content{
+.education__container, .experience__container{
+  row-gap: 2rem;
+}
+
+.education__content, .experience__content{
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
 }
 
-.education__year, .education__race{
+.education__year, .experience__year .education__race, .experience__race{
   font-size: var(--h3-font-size);
   margin-bottom: .25rem;
 }
 
-.education__university, .education__specialty{
+.education__university, .experience__loc, .education__specialty, .experience__specialty{
   display: block;
   font-size: var(--smaller-font-size);
 }
 
-.education__university, .education__year{
+.education__university, .education__year, .experience__year, .experience__loc{
   text-align: right;
 
 }
 
-.education__time{
+.education__time, .experience__time{
   padding: 0 1rem;
   justify-self: center;
 }
 
-.education__rounder{
+.education__rounder, .experience__rounder{
   position: relative;
   display: inline-block;
   width: 12px;
   height: 12px;
   background-color: var(--first_color);
+  border-radius: 50%;
+}
+
+.experience__rounder::before{
+  content: '';
+  position: absolute;
+  transform: translate(-4px, -4px);
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--first_color);
   border-radius: 50%;
 }
 
@@ -473,9 +484,9 @@ img{
   border-radius: 50%;
 }
 
-.education__line{
+.education__line, .experience__line{
   display: block;
-  height: 90%;
+  height: 100%;
   width: 2px;
   background-color: var(--first_color);
   transform: translate(5px,-4px);
