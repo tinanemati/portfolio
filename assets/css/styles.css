@@ -511,59 +511,62 @@ img {
   row-gap: 2rem;
 }
 
-.projects__content{
-  padding: 1.5rem .5rem;
+.projects__content {
+  padding: 1.5rem 0.5rem;
   border: 2px solid var(--first_color);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   text-align: center;
 }
 
-.projects__icon{
+.projects__icon {
   font-size: 2rem;
-  padding: .5rem;
+  padding: 0.5rem;
   background-color: var(--first_color);
   color: var(--first_color-lighten);
   border-radius: 50%;
   margin-bottom: var(--mb-2);
 }
 
-.projects__title{
+.projects__title {
   font-size: 1.25rem;
   color: var(--first_color-dark);
   margin-bottom: var(--mb-1);
 }
 
-.project-detail{
+.project-detail {
   display: inline-flex;
   font-size: 1rem;
   background-color: var(--first_color-lighten);
   color: var(--first_color);
-  padding: .25rem;
+  padding: 0.25rem;
   border-radius: 50%;
   margin-bottom: var(--mb-2);
 }
-.projects__content, .projects__icon, .projects__description, .projects__title{
-  transition: .5s;
+.projects__content,
+.projects__icon,
+.projects__description,
+.projects__title {
+  transition: 0.5s;
 }
 
-.projects__content:hover{
+.projects__content:hover {
   background-color: var(--first_color);
 }
 
-.projects__content:hover .projects__icon{
+.projects__content:hover .projects__icon {
   background-color: var(--first_color-lighten);
   color: var(--first_color);
 }
 
-.projects__content:hover .projects__title{
+.projects__content:hover .projects__title {
   color: var(--first_color-lighten);
 }
 
-.projects__content:hover .projects__description{
+.projects__content:hover .projects__description {
   color: var(--first_color-lighten);
 }
 
-.projects__content:hover .link__title{
+.projects__content:hover .link__title {
   color: var(--first_color-lighten);
 }
 /* ===== CONTACT =====*/
