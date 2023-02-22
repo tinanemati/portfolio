@@ -533,19 +533,39 @@ img {
   margin-bottom: var(--mb-1);
 }
 
+.project-detail{
+  display: inline-flex;
+  font-size: 1rem;
+  background-color: var(--first_color-lighten);
+  color: var(--first_color);
+  padding: .25rem;
+  border-radius: 50%;
+  margin-bottom: var(--mb-2);
+}
 .projects__content, .projects__icon, .projects__description, .projects__title{
   transition: .5s;
 }
 
 .projects__content:hover{
-  background-color: var(--first_color-light);
+  background-color: var(--first_color);
 }
 
 .projects__content:hover .projects__icon{
-  background-color: var(--first_color-light);
+  background-color: var(--first_color-lighten);
   color: var(--first_color);
 }
 
+.projects__content:hover .projects__title{
+  color: var(--first_color-lighten);
+}
+
+.projects__content:hover .projects__description{
+  color: var(--first_color-lighten);
+}
+
+.projects__content:hover .link__title{
+  color: var(--first_color-lighten);
+}
 /* ===== CONTACT =====*/
 .contact__container {
   row-gap: 3rem;
