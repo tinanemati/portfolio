@@ -139,6 +139,7 @@ img {
   background-color: var(--first_color-lighten);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 /*===== NAV =====*/
 .nav {
   height: var(--header-height);
