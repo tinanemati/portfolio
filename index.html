@@ -443,14 +443,14 @@
         <h2 class="section-title">Get in Touch</h2>
 
         <div class="contact__container bd-grid">
-          <from action="version.php" class="contact__form">
+          <form method="post" action="process_contact_form.php" class="contact__form">
             <div class="contact__inputs">
-              <input type="text" placeholder="Name" class="contact__input" />
-              <input type="mail" placeholder="Email" class="contact__input" />
+                <input type="text" placeholder="Name" class="contact__input" name="name"/>
+                <input type="mail" placeholder="Email" class="contact__input" name="email"/>
             </div>
 
             <textarea
-              name=""
+              name="message"
               id=""
               cols="0"
               rows="10"
@@ -463,7 +463,7 @@
               value="Send Message"
               class="button contact__button"
             />
-          </from>
+          </form>
 
           <div>
             <div class="contact__info">

@@ -570,6 +570,7 @@ img {
 .projects__content:hover .link__title {
   color: var(--first_color-lighten);
 }
+
 /* ===== CONTACT =====*/
 .contact__container {
   row-gap: 3rem;
