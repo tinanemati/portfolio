@@ -1,19 +1,37 @@
 <?php
+// Define variables and set to empty values
+$nameErr = $emailErr = $messageErr = "";
+$name = $email = $message = "";
+
 // Check if the form was submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    // Get the form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-
-    // Validate the data
-    if (empty($name) || empty($email) || empty($message)) {
-        // Set an error message and redirect back to the form
-        $error_message = 'Please fill out all the fields.';
-        header('Location: contact.php?error=' . urlencode($error_message));
-        exit;
+    // Get and Validate the form data
+    if (empty($_POST["name"])) {
+        $nameErr = "Name is required";
+      } else {
+        $name = test_input($_POST["name"]);
+        // check if name only contains letters and whitespace
+        if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+          $nameErr = "Only letters and white space allowed";
+        }
     }
+
+    if (empty($_POST["email"])) {
+        $emailErr = "Email is required";
+      } else {
+        $email = test_input($_POST["email"]);
+        // check if e-mail address is well-formed
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+          $emailErr = "Invalid email format";
+        }
+    }
+
+    if (empty($_POST['message'])) {
+        $message = "";
+      } else {
+        $message = test_input($_POST["message"]);
+      }
 
     // Set up the email recipient and subject
     $to = 'tinanemati.tina@gmail.com';
@@ -29,17 +47,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (mail($to, $subject, $email_message)) {
         // Set a success message and redirect back to the form
         $success_message = 'Your message was sent successfully.';
-        header('Location: contact.php?success=' . urlencode($success_message));
         exit;
     } else {
         // Set an error message and redirect back to the form
         $error_message = 'There was a problem sending your message. Please try again later.';
-        header('Location: contact.php?error=' . urlencode($error_message));
         exit;
     }
-}else {
-    // If the form was not submitted, redirect back to the form
-    header('Location: contact.php');
-    exit;
+}
+
+function test_input($data) {
+      $data = trim($data);
+      $data = stripslashes($data);
+      $data = htmlspecialchars($data);
+      return $data;
 }
 ?>
