@@ -507,6 +507,44 @@ img {
 }
 
 /* ===== PROJECTS =====*/
+.projects__container {
+  row-gap: 2rem;
+}
+
+.projects__content{
+  padding: 1.5rem .5rem;
+  border: 2px solid var(--first_color);
+  border-radius: .5rem;
+  text-align: center;
+}
+
+.projects__icon{
+  font-size: 2rem;
+  padding: .5rem;
+  background-color: var(--first_color);
+  color: var(--first_color-lighten);
+  border-radius: 50%;
+  margin-bottom: var(--mb-2);
+}
+
+.projects__title{
+  font-size: 1.25rem;
+  color: var(--first_color-dark);
+  margin-bottom: var(--mb-1);
+}
+
+.projects__content, .projects__icon, .projects__description, .projects__title{
+  transition: .5s;
+}
+
+.projects__content:hover{
+  background-color: var(--first_color-light);
+}
+
+.projects__content:hover .projects__icon{
+  background-color: var(--first_color-light);
+  color: var(--first_color);
+}
 
 /* ===== CONTACT =====*/
 .contact__container {
